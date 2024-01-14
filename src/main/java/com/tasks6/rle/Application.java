@@ -2,13 +2,9 @@ package com.tasks6.rle;
 
 public class Application {
     public static void main(String[] args) {
-        if (args.length > 0 && args[0] != null && !args[0].isEmpty()) {
             String input = args[0];
             String encoded = encodeRLE(input);
             System.out.println(encoded);
-        } else {
-            System.out.println(); // Обробка випадку пустого вводу
-        }
     }
 
     public static String encodeRLE(String input) {
